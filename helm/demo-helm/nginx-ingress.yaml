@@ -11,11 +11,3 @@ controller:
 
   service:
     type: NodePort
-
-  metrics:
-    enabled: true
-    service:
-      annotations:
-        prometheus.io/scrape: "true"
-        prometheus.io/port: "80"
-        prometheus.io/path: "/actuator/prometheus"

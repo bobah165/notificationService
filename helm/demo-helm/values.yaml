@@ -9,7 +9,7 @@ name:
 
 service:
   nameApp: notification-helm-service
-  portName: port-demo
+  portName: port-notification
   type: NodePort
   port: 80
   targetPort: 8002
@@ -25,7 +25,7 @@ ingress:
   host: "arch.homework"
   pathType: Prefix
   path:
-    person: /api/notification/currentNotification
+    notification: /api/notification/currentNotification
 
 db:
   url: jdbc:postgresql://my-db-postgresql:5432/postgres
